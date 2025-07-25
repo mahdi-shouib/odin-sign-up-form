@@ -1,4 +1,10 @@
+    @font-face {
+        font-family: 'Norse';
+        src: url(font/Norse-Bold.otf);
+    }
+    
     * {
+        flex: 1;
         margin: 0;
         padding: 0;
     }
@@ -22,10 +28,48 @@
 
     #image-panel {
         flex: 1;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-around;
+        top: 10px;
         background: url('assets/adrian-swancar-tiTN0N_Z9tI-unsplash.jpg') center/cover no-repeat;
     }
 
-    #text-panel {
+    #logo {
+        align-content: center;
+    }
+    
+    img {
+        max-height: 1.5em;
+        max-width: 1em;
+    }
+    
+    #logo-content{
+        display: flex;
+        color: white;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        gap: 5px;
+        font-size: 4em;
+        font-family: 'Norse';
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    a {
+        color: white;
+    }
+
+    #reference {
+        color: white;
+        font-size: 10px;
+        padding: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        align-content: end;
+    }
+
+    #form-panel {
         flex: 2.5;
         display: flex;
         justify-content: center;
