@@ -1,16 +1,34 @@
-* {
-    margin: 0;
-    background-color: rgb(240, 240, 240);
-}
+    * {
+        margin: 0;
+        padding: 0;
+    }
 
-main {
-    display: flex;
-    height: 100vh;
-}
+    html, body, main {
+        height: 100%;
+        background: black;
+    }
 
-.panel {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+    main {
+        display: flex;
+        align-items: center;
+    }
+
+    .panel {
+        display: flex;
+        width: 100%;
+        max-height: 100%;
+        aspect-ratio: 1.5;
+    }
+
+    #image-panel {
+        flex: 1;
+        background: url('assets/adrian-swancar-tiTN0N_Z9tI-unsplash.jpg') center/cover no-repeat;
+    }
+
+    #text-panel {
+        flex: 2.5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #eee;
+    }
