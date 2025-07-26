@@ -4,9 +4,9 @@
     }
     
     * {
-        flex: 1;
         margin: 0;
         padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
     }
 
     html, body, main {
@@ -31,12 +31,11 @@
         display: flex;
         flex-direction: column;
         text-align: center;
-        justify-content: space-around;
-        top: 10px;
         background: url('assets/adrian-swancar-tiTN0N_Z9tI-unsplash.jpg') center/cover no-repeat;
     }
 
     #logo {
+        flex: 2;
         align-content: center;
     }
     
@@ -62,17 +61,65 @@
     }
 
     #reference {
+        flex: 1;
         color: white;
-        font-size: 10px;
+        font-size: 13px;
         padding: 10px;
-        font-family: Arial, Helvetica, sans-serif;
         align-content: end;
     }
 
     #form-panel {
         flex: 2.5;
         display: flex;
+        flex-direction: column;
         justify-content: center;
-        align-items: center;
+        gap: 20px;
         background-color: #eee;
+    }
+
+    p {
+        padding: 30px;
+        font-weight: bold;
+    }
+
+    label {
+        display: block;
+    }
+
+    .form-group {
+        display: flex;
+        gap: 80px;
+    }
+
+    #form-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 30px;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+        background-color: white;
+    }
+
+    button {
+        padding: 10px 40px;
+        margin: 30px;
+        border-radius: 8px;
+        border: none;
+        color: white;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+        text-shadow: 2px 2px 3px black;
+        background-image: linear-gradient(to right, #3C6676, #47778E, #D48683, #AC4659);
+    }
+
+    button:hover {
+        cursor: pointer;
+        filter: brightness(90%);
+    }
+
+    #log-in {
+        padding-left: 30px;
+    }
+
+    #log-in a {
+        color: #AC4659;
     }
