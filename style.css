@@ -83,6 +83,7 @@
 
     p {
         padding: 30px;
+        font-size: 18px;
         font-weight: bold;
     }
 
@@ -103,7 +104,7 @@
         border: 1px solid rgba(0, 0, 0, 0.1);
     }
 
-    input:invalid {
+    input[type="password"]:invalid {
         border: 1px solid rgba(255, 0, 0, 0.2);
     }
 
